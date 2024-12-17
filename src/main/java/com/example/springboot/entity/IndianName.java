@@ -1,4 +1,4 @@
-package com.example.springboot.model;
+package com.example.springboot.entity;
 
 import jakarta.persistence.*;
 
@@ -10,6 +10,8 @@ public class IndianName {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sq_id")
     @SequenceGenerator(name = "sq_id", sequenceName = "learnspringboot.indian_names_id_seq", allocationSize = 1)
     private Integer id;
+
+    private String name;
 
     public Integer getId() {
         return id;
@@ -27,6 +29,6 @@ public class IndianName {
         this.name = name;
     }
 
-    private String name;
+
 }
 

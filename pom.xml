@@ -65,6 +65,28 @@
 			<artifactId>spring-batch-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--		added to work with JdbcTemplate-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+<!--		added to work with sftt, commenting it because it works with only sftp not ftp-->
+<!--		<dependency>-->
+<!--			<groupId>com.jcraft</groupId>-->
+<!--			<artifactId>jsch</artifactId>-->
+<!--			<version>0.1.55</version>-->
+<!--		</dependency>-->
+
+<!--		added to work with ftp & getting some error so commenting this also-->
+<!--		<dependency>-->
+<!--			<groupId>commons-net</groupId>-->
+<!--			<artifactId>commons-net</artifactId>-->
+<!--			<version>3.9.0</version> &lt;!&ndash; Check for the latest version &ndash;&gt;-->
+<!--		</dependency>-->
+
+
 	</dependencies>
 
 	<build>

@@ -1,7 +1,7 @@
 package com.example.springboot.batchitems;
 
-import com.example.springboot.dao.IndianNamesDAO;
-import com.example.springboot.model.IndianName;
+import com.example.springboot.repository.IndianNamesRepository;
+import com.example.springboot.entity.IndianName;
 import org.springframework.batch.item.Chunk;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 public class BatchItemWriterNames implements ItemWriter<IndianName> {
 
     @Autowired
-    IndianNamesDAO indianNamesDAO;
+    IndianNamesRepository indianNamesDAO;
 
     @Override
     public void write(Chunk<? extends IndianName> chunk) throws Exception {

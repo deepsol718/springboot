@@ -1,6 +1,6 @@
 package com.example.springboot.batchitems;
 
-import com.example.springboot.model.IndianName;
+import com.example.springboot.entity.IndianName;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.StepExecutionListener;
 import org.springframework.batch.core.scope.context.StepContext;
